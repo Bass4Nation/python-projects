@@ -17,7 +17,10 @@ def jsonReader(api):
 
     for key in jsonData.keys():
         # print(key)
-        print(jsonData[key].keys())
+        print("--------------------------------------")
+        print(jsonData[key])
+        if jsonData[key].keys() in jsonData[key]:
+            print("YES")
         # for item in jsonData[key]:
         #     print(item)
 
